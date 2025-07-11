@@ -1,0 +1,17 @@
+@reference "@/globalcss";
+
+.heading-1 {
+  @apply text-text-heading-1 font-extrabold text-heading-1;
+}
+
+.heading-2 {
+  @apply text-text-heading-2 font-bold text-heading-2;
+}
+
+.body {
+  @apply text-text-body-1 text-body font-medium;
+}
+
+.caption {
+  @apply text-text-caption text-caption font-medium;
+}

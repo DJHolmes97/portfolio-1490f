@@ -1,0 +1,9 @@
+@reference "@/globalcss";
+
+.pill {
+  @apply bg-bg-secondary text-text-secondary-default items-center justify-center font-medium text-caption rounded-pill;
+}
+
+.pill-group {
+  @apply flex gap-0.5 p-0.5 flex-wrap items-center justify-center;
+}

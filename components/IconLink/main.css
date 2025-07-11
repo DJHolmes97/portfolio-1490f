@@ -1,0 +1,6 @@
+@reference "@/globalcss";
+
+.icon-link {
+  @apply size-3 text-icon-default;
+  @apply hover:text-icon-hover size-3.5;
+}

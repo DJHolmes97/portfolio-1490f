@@ -1,0 +1,14 @@
+.nav-link {
+  @apply flex gap-1.5 items-center py-1;
+}
+
+.nav-link-text {
+  @apply text-link-secondary-default text-caption font-medium;
+  @apply before:content-[''] before:w-3 before:h-[1px] before:bg-link-secondary-default;
+
+  @apply group-hover/nav-link:group-focus/nav-link:text-link-secondary-hover;
+  @apply group-hover/nav-link:group-focus/nav-link:before:bg-link-secondary-hover group-hover/nav-link:group-focus/nav-link:before:w-4;
+
+  @apply group-active/nav-link:before:bg-link-secondary-hover;
+  @apply group-active/nav-link:before:w-5;
+}

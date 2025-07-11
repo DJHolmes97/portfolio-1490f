@@ -1,0 +1,9 @@
+@reference "@/globalcss";
+
+.title {
+  @apply flex items-center justify-center gap-1;
+}
+
+.title-left {
+  @apply text-text-heading-2;
+}

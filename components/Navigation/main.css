@@ -1,0 +1,3 @@
+.navigation {
+  @apply flex flex-col py-0.5;
+}

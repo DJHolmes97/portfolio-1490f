@@ -1,0 +1,11 @@
+.date-container {
+  @apply flex items-center justify-between gap-0.5;
+}
+
+.date-text {
+  @apply text-text-body;
+}
+
+.date-text:not(:last-child) {
+  @apply after:content-[''] after:w-0.5 after:h-4 after:bg-bg-secondary after:rounded-full;
+}

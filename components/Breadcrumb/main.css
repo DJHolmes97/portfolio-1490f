@@ -1,0 +1,15 @@
+.breadcrumb {
+  @apply flex items-center gap-1;
+}
+
+.breadcrumb-text,
+.breadcrumb-chevron {
+  @apply text-link-primary-default;
+  @apply group-hover/breadcrumb:group-focus/breadcrumb:text-link-primary-hover;
+  @apply group-active/breadcrumb:text-link-primary-hover;
+}
+
+.breadcrumb-chevron {
+  @apply size-1.5;
+  @apply group-hover/breadcrumb:group-focus/breadcrumb:size-2;
+}

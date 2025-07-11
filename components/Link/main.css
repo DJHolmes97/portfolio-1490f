@@ -1,0 +1,12 @@
+@reference "@/globalcss";
+
+.link {
+  @apply flex gap-0.5 text-link-primary-default text-body font-medium items-center;
+  @apply hover:focus:text-link-primary-hover;
+  @apply active:text-link-primary-hover;
+}
+
+.link-icon {
+  @apply text-link-primary-default size-1.5;
+  @apply group-hover/link:group-focus/link:size-2;
+}
