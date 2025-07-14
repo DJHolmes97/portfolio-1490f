@@ -1,11 +1,13 @@
+@reference "../../styles/globals.css";
+
 .date-container {
-  @apply flex items-center justify-between gap-0.5;
+  @apply flex flex-row items-center justify-between gap-0.5 w-fit p-0.5;
 }
 
 .date-text {
-  @apply text-text-body;
+  @apply text-text-body-1 flex w-fit items-center justify-center min-w-6 gap-0.5;
 }
 
 .date-text:not(:last-child) {
-  @apply after:content-[''] after:w-0.5 after:h-4 after:bg-bg-secondary after:rounded-full;
+  @apply after:content-[''] after:w-3 after:h-[1px] after:bg-text-body-1 after:rounded-full;
 }

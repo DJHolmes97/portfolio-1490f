@@ -1,35 +1,30 @@
 @import "tailwindcss";
 
 :root {
-  font-family: "Inter", sans-serif;
-  // Text Color Variables
+  font-family: "Inter";
+
   --color-text-heading-1: #1effaa;
   --color-text-heading-2: #fefefe;
   --color-text-heading-3: #aaaaaa;
   --color-text-body-1: #aaaaaa;
   --color-text-secondary-default: #1effaa;
 
-  // Background Color Variables
   --color-bg-primary: #000000;
 
-  --color-bg-secondary: #1effaa10;
+  --color-bg-secondary: #1effaa20;
   --color-bg-secondary-hover: #0f0f0f;
 
-  // Icon Color Variables
   --color-icon-default: #aaaaaa;
   --color-icon-hover: #1effaa;
 
-  // Link Color Variables
   --color-link-primary-default: #fefefe;
   --color-link-primary-hover: #1effaa;
   --color-link-secondary-default: #aaaaaa;
   --color-link-secondary-hover: #1effaa;
 
-  // Border Radius Variables
   --border-radius-default: 8px;
   --border-radius-pill: 50px;
 
-  // Size Variables
   --size-spacing-50: 4px;
   --size-spacing-100: 8px;
   --size-spacing-200: 16px;
@@ -42,14 +37,12 @@
   --size-spacing-900: 96px;
   --size-spacing-1000: 128px;
 
-  // Opacity Variables
   --opacity-visible: 1;
   --opacity-hidden: 0;
   --opacity-disabled: 0.6;
   --opacity-emphasis: 0.1;
   --opacity-dull: 0.8;
 
-  // Font Weight Variables
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -57,7 +50,6 @@
   --font-weight-extrabold: 800;
   --font-weight-black: 900;
 
-  // Font Size Variables
   --font-size-heading-1: 48px;
   --font-size-heading-2: 20px;
   --font-size-body: 16px;
@@ -92,7 +84,7 @@
   --color-link-secondary-hover: var(--color-link-secondary-hover);
 
   /* Spacing Scale */
-  ----spacing: var(--size-spacing-100, 8px);
+  --spacing: var(--size-spacing-100, 8px);
 
   /* Font Sizes */
   --text-caption: var(--font-size-caption); /* 12px */

@@ -1,4 +1,4 @@
-@reference "@/globalcss";
+@reference "../../styles/globals.css";
 
 .link {
   @apply flex gap-0.5 text-link-primary-default text-body font-medium items-center;

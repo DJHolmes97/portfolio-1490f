@@ -1,3 +1,5 @@
+@reference "../../styles/globals.css";
+
 .breadcrumb {
   @apply flex items-center gap-1;
 }

@@ -1,0 +1,5 @@
+@reference "../../styles/globals.css";
+
+.container {
+  @apply flex flex-col items-center justify-center gap-10 px-2 w-full max-w-150;
+}

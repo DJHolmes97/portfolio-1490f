@@ -1,8 +1,11 @@
+import React from "react"
+import "./main.css"
 type TypographyProps = {
   children: React.ReactNode
   type: "heading-1" | "heading-2" | "body" | "caption"
   className?: string
 }
+
 export const Typography = ({ children, type, className }: TypographyProps) => {
   switch (type) {
     case "heading-1":

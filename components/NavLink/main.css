@@ -1,13 +1,20 @@
+@reference "../../styles/globals.css";
+
 .nav-link {
-  @apply flex gap-1.5 items-center py-1;
+  @apply flex flex-row items-center py-1 w-fit;
+}
+
+@utility nav-link-hover {
+  @apply text-link-secondary-hover;
+  @apply before:bg-link-secondary-hover before:w-4;
 }
 
 .nav-link-text {
-  @apply text-link-secondary-default text-caption font-medium;
-  @apply before:content-[''] before:w-3 before:h-[1px] before:bg-link-secondary-default;
+  @apply text-link-secondary-default text-caption font-medium flex flex-row items-center gap-1.5;
+  @apply before:content-[''] before:flex before:w-3 before:h-[1px] before:bg-link-secondary-default;
 
-  @apply group-hover/nav-link:group-focus/nav-link:text-link-secondary-hover;
-  @apply group-hover/nav-link:group-focus/nav-link:before:bg-link-secondary-hover group-hover/nav-link:group-focus/nav-link:before:w-4;
+  @apply group-hover/nav-link:nav-link-hover;
+  @apply group-focus/nav-link:nav-link-hover;
 
   @apply group-active/nav-link:before:bg-link-secondary-hover;
   @apply group-active/nav-link:before:w-5;

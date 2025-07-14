@@ -1,8 +1,10 @@
 import React, { ReactNode } from "react"
 import Link from "next/link"
+import "./main.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 type IconLinkProps = {
-  icon: ReactNode
+  icon: string
   href: string
   className?: string
 }
@@ -10,7 +12,7 @@ type IconLinkProps = {
 export const IconLink = ({ icon, href, className }: IconLinkProps) => {
   return (
     <Link href={href} className={`icon-link ${className}`}>
-      {icon}
+      <FontAwesomeIcon icon={icon} className="icon-image" />
     </Link>
   )
 }

@@ -1,6 +1,10 @@
-@reference "@/globalcss";
+@reference "../../styles/globals.css";
 
 .icon-link {
-  @apply size-3 text-icon-default;
+  @apply size-3 text-icon-default flex justify-center items-center;
   @apply hover:text-icon-hover size-3.5;
+}
+
+.icon-image {
+  @apply size-full;
 }

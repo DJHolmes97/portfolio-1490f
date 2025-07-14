@@ -1,22 +1,61 @@
 import Image from "next/image"
-import { useEffect, useState } from "react"
+import "./page.css"
+import {
+  IconLink,
+  IconLinkGroup,
+  Title,
+  Typography,
+  NavLink,
+  Navigation,
+  AboutSection,
+  ExperienceSection,
+  EducationSection,
+} from "@/components"
+
+import { faFile } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
+type ColumnProps = {
+  children?: React.ReactNode
+}
+
+const LeftColumn = ({ children }: ColumnProps) => {
+  return <div className="left-column">{children}</div>
+}
+
+const RightColumn = ({ children }: ColumnProps) => {
+  return <div className="right-column">{children}</div>
+}
 
 export default function Home() {
-  const query = `{
-  aboutSectionCollection {
-    items {
-      name
-      content {
-        json
-      }
-    }
-  }
-}`
-
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start"></main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center"></footer>
+    <div className="h-full w-full">
+      <main className="flex h-full w-full flex-row gap-10 relative">
+        <LeftColumn>
+          <Title />
+          <Typography type="heading-2">Frontend Engineer</Typography>
+          <Typography type="body">
+            Crafting Seamless Interfaces with Precision and Purpose.
+          </Typography>
+          <Navigation>
+            <NavLink href="/about">ABOUT</NavLink>
+            <NavLink href="/experience">EXPERIENCE</NavLink>
+            <NavLink href="/education">EDUCATION</NavLink>
+            <NavLink href="/projects">PROJECTS</NavLink>
+          </Navigation>
+          <IconLinkGroup>
+            <IconLink icon={faGithub} href="/link2" />
+            <IconLink icon={faLinkedin} href="/link2" />
+            <IconLink icon={faFile} href="/link3" />
+          </IconLinkGroup>
+        </LeftColumn>
+        <RightColumn>
+          <AboutSection />
+          <ExperienceSection />
+          <EducationSection />
+        </RightColumn>
+      </main>
+      <footer className=""></footer>
     </div>
   )
 }

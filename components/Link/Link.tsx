@@ -1,7 +1,8 @@
 import React from "react"
 import "./main.css"
-import { ReactComponent as LinkIcon } from "./assets/link-icon.svg"
 import NextLink from "next/link"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLink } from "@fortawesome/free-solid-svg-icons"
 
 type LinkProps = {
   children: React.ReactNode
@@ -14,7 +15,7 @@ export const Link = ({ children, href, className }: LinkProps) => {
     <NextLink href={href} className={`link group/link ${className}`}>
       {children}
       <span className="link-icon">
-        <LinkIcon />
+        <FontAwesomeIcon icon={faLink} />
       </span>
     </NextLink>
   )

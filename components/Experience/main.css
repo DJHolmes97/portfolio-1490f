@@ -1,0 +1,32 @@
+@reference "../../styles/globals.css";
+
+.experience-link {
+  transition: opacity 0.2s ease-in-out;
+  @apply flex flex-row hover:bg-bg-secondary-hover rounded-default;
+}
+
+.details-column {
+  @apply flex flex-col gap-1.5 p-0.5;
+}
+
+.date-column {
+  @apply flex flex-col px-0.5 py-1 min-w-fit;
+}
+
+body:has(.experience-link:hover) .experience-link:not(:hover) {
+  opacity: 0.5;
+}
+
+.title {
+  @apply flex gap-0.5 text-link-primary-default text-body font-medium items-center;
+  @apply group-hover/experience:text-link-primary-hover;
+  @apply group-focus/experience:text-link-primary-hover;
+  @apply group-active/experience:text-link-primary-hover;
+}
+
+.title-icon {
+  @apply text-link-primary-default size-1.5;
+  @apply group-hover/experience:size-2 group-hover/experience:text-link-primary-hover;
+  @apply group-focus/experience:size-2 group-focus/experience:text-link-primary-hover;
+  @apply group-active/experience:size-2 group-active/experience:text-link-primary-hover;
+}

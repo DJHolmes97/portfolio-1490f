@@ -1,0 +1,5 @@
+@reference '../../styles/globals.css';
+
+.about-section {
+  @apply flex flex-col gap-1.5;
+}

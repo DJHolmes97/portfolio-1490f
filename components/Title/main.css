@@ -1,7 +1,7 @@
-@reference "@/globalcss";
+@reference "../../styles/globals.css";
 
-.title {
-  @apply flex items-center justify-center gap-1;
+.title-container {
+  @apply flex flex-row w-fit items-center justify-center gap-1;
 }
 
 .title-left {

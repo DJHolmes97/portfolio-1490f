@@ -1,9 +1,9 @@
-@reference "@/globalcss";
+@reference "../../styles/globals.css";
 
 .pill {
-  @apply bg-bg-secondary text-text-secondary-default items-center justify-center font-medium text-caption rounded-pill;
+  @apply bg-bg-secondary text-text-secondary-default items-center justify-center font-medium text-caption rounded-pill px-1.5 py-0.5;
 }
 
 .pill-group {
-  @apply flex gap-0.5 p-0.5 flex-wrap items-center justify-center;
+  @apply flex gap-0.5 flex-wrap items-center;
 }
