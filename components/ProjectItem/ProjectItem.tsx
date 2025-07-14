@@ -11,7 +11,6 @@ import {
   documentToReactComponents,
   Options,
 } from "@contentful/rich-text-react-renderer"
-import Image from "next/image"
 
 type ProjectItemProps = {
   title: string
@@ -50,7 +49,7 @@ export const ProjectItem = ({
   return (
     <li className="project-item">
       <div className="image-wrapper">
-        <Image
+        <img
           className="project-image"
           src={imageUrl as string}
           alt={`${title} project screenshot`}
