@@ -1,13 +1,8 @@
 import React from "react"
 import "./main.css"
 import { Typography } from "../Typography/Typography"
-import { Document, BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { Document } from "@contentful/rich-text-types"
 import { contentfulClient } from "@/utils"
-import {
-  documentToReactComponents,
-  Options,
-} from "@contentful/rich-text-react-renderer"
-import { url } from "inspector"
 import { Experience } from "../Experience/Experience"
 import { Link } from "@/components/"
 
@@ -24,14 +19,6 @@ type EducationSectionFields = {
 type EducationSectionSkeleton = {
   fields: EducationSectionFields
   contentTypeId: "education"
-}
-
-const options: Options = {
-  renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => (
-      <Typography type="body">{children}</Typography>
-    ),
-  },
 }
 
 async function getEducationSection(): Promise<EducationSectionFields[] | null> {
@@ -65,7 +52,9 @@ export const EducationSection = async () => {
   if (!educationEntry) {
     return (
       <section className="education-section">
-        <Typography type="heading-2">Education</Typography>
+        <Typography id="education" type="heading-2">
+          Education
+        </Typography>
         <Typography type="body">Unable to load education section.</Typography>
       </section>
     )
@@ -73,7 +62,9 @@ export const EducationSection = async () => {
 
   return (
     <section className="education-section">
-      <Typography type="heading-2">Education</Typography>
+      <Typography id="education" type="heading-2">
+        Education
+      </Typography>
       <ul className="education-list">
         {educationEntry.map((item) => (
           <Experience

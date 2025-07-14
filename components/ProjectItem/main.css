@@ -1,0 +1,29 @@
+@reference "../../styles/globals.css";
+
+.project-item {
+  @apply flex flex-row gap-2;
+}
+
+.image-wrapper {
+  @apply flex flex-shrink-0 items-baseline p-1;
+}
+
+.project-image {
+  @apply w-15 object-cover p-1;
+}
+
+.project-header {
+  @apply flex flex-row justify-between gap-1;
+}
+
+.project-details {
+  @apply flex flex-col;
+}
+
+.project-description {
+  @apply mb-1.5;
+}
+
+.inline-link {
+  @apply text-link-primary-default hover:text-link-primary-hover;
+}

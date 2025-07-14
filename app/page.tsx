@@ -1,4 +1,3 @@
-import Image from "next/image"
 import "./page.css"
 import {
   IconLink,
@@ -10,6 +9,7 @@ import {
   AboutSection,
   ExperienceSection,
   EducationSection,
+  ProjectSection,
 } from "@/components"
 
 import { faFile } from "@fortawesome/free-solid-svg-icons"
@@ -38,14 +38,17 @@ export default function Home() {
             Crafting Seamless Interfaces with Precision and Purpose.
           </Typography>
           <Navigation>
-            <NavLink href="/about">ABOUT</NavLink>
-            <NavLink href="/experience">EXPERIENCE</NavLink>
-            <NavLink href="/education">EDUCATION</NavLink>
-            <NavLink href="/projects">PROJECTS</NavLink>
+            <NavLink href="#about">ABOUT</NavLink>
+            <NavLink href="#experience">EXPERIENCE</NavLink>
+            <NavLink href="#education">EDUCATION</NavLink>
+            <NavLink href="#projects">PROJECTS</NavLink>
           </Navigation>
           <IconLinkGroup>
-            <IconLink icon={faGithub} href="/link2" />
-            <IconLink icon={faLinkedin} href="/link2" />
+            <IconLink icon={faGithub} href="https://github.com/DJHolmes97" />
+            <IconLink
+              icon={faLinkedin}
+              href="https://www.linkedin.com/in/djholmes97/"
+            />
             <IconLink icon={faFile} href="/link3" />
           </IconLinkGroup>
         </LeftColumn>
@@ -53,6 +56,7 @@ export default function Home() {
           <AboutSection />
           <ExperienceSection />
           <EducationSection />
+          <ProjectSection />
         </RightColumn>
       </main>
       <footer className=""></footer>

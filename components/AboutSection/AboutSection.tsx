@@ -1,7 +1,7 @@
 import React from "react"
 import "./main.css"
 import { Typography } from "../Typography/Typography"
-import { Document, BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { Document, BLOCKS } from "@contentful/rich-text-types"
 import { contentfulClient } from "@/utils"
 import {
   documentToReactComponents,
@@ -53,7 +53,9 @@ export const AboutSection = async () => {
   if (!aboutEntry) {
     return (
       <section className="about-section">
-        <Typography type="heading-2">About</Typography>
+        <Typography id="about" type="heading-2">
+          About
+        </Typography>
         <p>Unable to load about section.</p>
       </section>
     )
@@ -61,7 +63,9 @@ export const AboutSection = async () => {
 
   return (
     <section className="about-section">
-      <Typography type="heading-2">About</Typography>
+      <Typography id="about" type="heading-2">
+        About
+      </Typography>
       {documentToReactComponents(aboutEntry.content, options)}
     </section>
   )

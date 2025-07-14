@@ -1,7 +1,7 @@
 import React from "react"
 import "./main.css"
 import { Typography } from "../Typography/Typography"
-import { Document, BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { Document, BLOCKS } from "@contentful/rich-text-types"
 import { Date } from "../Date/Date"
 import { PillGroup } from "../PillGroup/PillGroup"
 import {

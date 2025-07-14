@@ -1,0 +1,9 @@
+@reference "../../styles/globals.css";
+
+.project-section {
+  @apply flex flex-col gap-2;
+}
+
+.project-list {
+  @apply flex flex-col gap-4;
+}

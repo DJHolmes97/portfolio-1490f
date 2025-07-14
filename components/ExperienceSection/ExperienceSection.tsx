@@ -1,13 +1,8 @@
 import React from "react"
 import "./main.css"
 import { Typography } from "../Typography/Typography"
-import { Document, BLOCKS, INLINES } from "@contentful/rich-text-types"
+import { Document } from "@contentful/rich-text-types"
 import { contentfulClient } from "@/utils"
-import {
-  documentToReactComponents,
-  Options,
-} from "@contentful/rich-text-react-renderer"
-import { url } from "inspector"
 import { Experience } from "../Experience/Experience"
 
 type ExperienceSectionFields = {
@@ -22,14 +17,6 @@ type ExperienceSectionFields = {
 type ExperienceSectionSkeleton = {
   fields: ExperienceSectionFields
   contentTypeId: "experience"
-}
-
-const options: Options = {
-  renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => (
-      <Typography type="body">{children}</Typography>
-    ),
-  },
 }
 
 async function getExperienceSection(): Promise<
@@ -64,7 +51,9 @@ export const ExperienceSection = async () => {
   if (!experienceEntry) {
     return (
       <section className="experience-section">
-        <Typography type="heading-2">Experience</Typography>
+        <Typography id="experience" type="heading-2">
+          Experience
+        </Typography>
         <Typography type="body">Unable to load experience section.</Typography>
       </section>
     )
@@ -72,7 +61,9 @@ export const ExperienceSection = async () => {
 
   return (
     <section className="experience-section">
-      <Typography type="heading-2">Experience</Typography>
+      <Typography id="experience" type="heading-2">
+        Experience
+      </Typography>
       <ul className="experience-list">
         {experienceEntry.reverse().map((item) => (
           <Experience
