@@ -9,6 +9,7 @@ import {
 } from "@contentful/rich-text-react-renderer"
 import { url } from "inspector"
 import { Experience } from "../Experience/Experience"
+import { Link } from "@/components/"
 
 type EducationSectionFields = {
   title: string
@@ -87,6 +88,7 @@ export const EducationSection = async () => {
           />
         ))}
       </ul>
+      <Link href="/resume">View my full resume</Link>
     </section>
   )
 }

@@ -56,6 +56,15 @@
   --font-size-caption: 12px;
 }
 
+body {
+  background-image: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y),
+    #1effaa30 0%,
+    transparent 100%
+  );
+  transition: background-image 0.1s ease-out;
+}
+
 /* Tailwind CSS v4 Theme Configuration */
 @theme {
   --color-*: initial;

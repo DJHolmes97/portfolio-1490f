@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import "@/globalcss" // Import global CSS
 import { Container } from "@/components/Container/Container"
 import { Inter } from "next/font/google"
+import { MouseGradient } from "@/components"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body
         className={`flex antialiased bg-bg-primary justify-center ${inter.className}`}
       >
+        <MouseGradient />
         <Container>{children}</Container>
       </body>
     </html>

@@ -1,10 +1,13 @@
 import React, { ReactNode } from "react"
 import Link from "next/link"
 import "./main.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  FontAwesomeIcon,
+  FontAwesomeIconProps,
+} from "@fortawesome/react-fontawesome"
 
 type IconLinkProps = {
-  icon: string
+  icon: FontAwesomeIconProps["icon"]
   href: string
   className?: string
 }

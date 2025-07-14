@@ -1,7 +1,7 @@
 @reference "../styles/globals.css";
 
 .left-column {
-  @apply px-1 gap-1 py-10 max-w-50 w-full sticky top-0 h-fit;
+  @apply flex flex-col px-1 gap-1 py-10 max-w-50 w-full sticky top-0 h-screen;
 }
 
 .right-column {
