@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniel Holmes Portfolio
+
+A modern, interactive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS v4, featuring dynamic content management through Contentful CMS and engaging UI interactions.
+
+## Overview
+
+This portfolio showcases a clean, professional design with:
+
+- **Responsive Design**: Optimized for desktop and mobile viewing
+- **Interactive Elements**: Mouse-following gradient backgrounds and smooth scrolling
+- **Dynamic Content**: Projects, experience, and education data managed through Contentful
+- **Modern UI**: Clean typography, consistent spacing, and intuitive navigation
+- **Performance Optimized**: Built with Next.js App Router and optimized fonts
+
+## Architecture
+
+### Project Structure
+
+```
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Root layout with global styles
+│   ├── page.tsx           # Homepage with portfolio sections
+│   └── projects/          # Projects listing page
+├── components/            # Reusable React components
+│   ├── AboutSection/      # About section with Contentful integration
+│   ├── ExperienceSection/ # Work experience timeline
+│   ├── ProjectSection/    # Projects showcase
+│   ├── MouseGradient/     # Interactive background gradient
+│   ├── Navigation/        # Smooth scrolling navigation
+│   └── [other components] # Typography, links, containers, etc.
+├── hooks/                 # Custom React hooks
+│   └── useActiveSelection.ts # Active section detection for navigation
+├── styles/                # Global CSS and design tokens
+│   └── globals.css        # CSS custom properties and Tailwind integration
+├── utils/                 # Utility functions
+│   └── contentfulClient.ts # Contentful CMS client configuration
+└── public/                # Static assets
+    └── Daniel_Holmes_CV.pdf # Resume download
+```
+
+### Key Features
+
+- **Modular Component Architecture**: Reusable, typed React components
+- **Custom CSS Properties**: Design token system for consistent theming
+- **Contentful Integration**: Dynamic content management for projects and experience
+- **Smooth Scrolling Navigation**: Active section detection with viewport-based highlighting
+- **Interactive Backgrounds**: Mouse-following gradient effects
+- **Font Optimization**: Inter font family with Next.js font optimization
+- **TypeScript**: Full type safety across the application
+
+## Technologies Used
+
+### Frontend Framework & Build Tools
+
+- **[Next.js 15](https://nextjs.org/)** - React framework with App Router
+- **[React 19](https://react.dev/)** - UI component library
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[PostCSS](https://postcss.org/)** - CSS processing and optimization
+
+### Content Management & Data
+
+- **[Contentful](https://www.contentful.com/)** - Headless CMS for dynamic content
+- **[@contentful/rich-text-react-renderer](https://github.com/contentful/rich-text)** - Rich text rendering
+- **[@contentful/rich-text-types](https://github.com/contentful/rich-text)** - Rich text type definitions
+
+### Icons & Typography
+
+- **[FontAwesome](https://fontawesome.com/)** - Icon library with React components
+- **[Inter Font](https://fonts.google.com/specimen/Inter)** - Modern, readable typeface via Google Fonts
+
+### Development Tools
+
+- **[ESLint](https://eslint.org/)** - Code linting and quality
+- **[SVGR](https://react-svgr.com/)** - SVG to React component transformation
+- **Path Mapping** - Absolute imports with `@/` prefix
+
+### Package Management
+
+- **[pnpm](https://pnpm.io/)** - Fast, disk space efficient package manager
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- pnpm (recommended) or npm
+- Contentful account for CMS content
+
+### Environment Setup
+
+1. **Clone the repository**
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd portfolio-1490f
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Configure environment variables**
+   Create a `.env.local` file:
 
-## Learn More
+```env
+SPACE_ID=your_contentful_space_id
+API_TOKEN=your_contentful_access_token
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Run the development server**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-## Deploy on Vercel
+### Build Commands
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Development with Turbopack
+pnpm dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Production build
+pnpm build
+
+# Start production server
+pnpm start
+
+# Lint code
+pnpm lint
+```
+
+## Development Features
+
+- **Hot Reload**: Instant updates during development with Turbopack
+- **Type Safety**: Full TypeScript coverage with strict type checking
+- **Component-First**: Modular, reusable component architecture
+- **Performance**: Optimized images, fonts, and build output
+- **Accessibility**: Semantic HTML and proper contrast ratios
+
+## Deployment
+
+This project is optimized for deployment on modern platforms like Vercel, Netlify, or any Node.js hosting service.
+
+### Vercel (Recommended)
+
+The easiest deployment option with automatic builds and optimizations.
+
+### Build Output
+
+The project builds to a static site with server-side rendering capabilities, ensuring fast load times and SEO optimization.
+
+---
+
+Built with ❤️ using modern web technologies.
