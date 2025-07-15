@@ -55,7 +55,7 @@
   --font-size-caption: 12px;
 }
 
-body {
+html {
   background-image: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y),
     #1effaa30 0%,

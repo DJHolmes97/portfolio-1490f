@@ -22,11 +22,12 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`min-h-screen scroll-smooth ${inter.variable}`}>
-      <body
-        className={`flex antialiased bg-bg-primary justify-center ${inter.className}`}
-      >
-        <MouseGradient />
+    <html
+      lang="en"
+      className={`bg-bg-primary min-h-screen scroll-smooth ${inter.variable}`}
+    >
+      <MouseGradient />
+      <body className={`flex antialiased justify-center ${inter.className}`}>
         <Container>{children}</Container>
       </body>
     </html>
