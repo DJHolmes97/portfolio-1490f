@@ -4,6 +4,6 @@
   @apply flex flex-row w-fit items-center justify-center gap-1;
 }
 
-.title-left {
+.title-left.heading-1 {
   @apply text-text-heading-2;
 }
