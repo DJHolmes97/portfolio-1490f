@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react"
 
 export function useActiveSection(sectionIds: string[]) {
-  const [activeId, setActiveId] = useState<string>("")
+  const [activeId, setActiveId] = useState<string>(sectionIds[0])
   const rafRef = useRef<number>(null)
 
   useEffect(() => {

@@ -58,7 +58,7 @@
 html {
   background-image: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y),
-    #1effaa30 0%,
+    #1effaa20 0%,
     transparent 100%
   );
   transition: background-image 0.1s ease-out;
