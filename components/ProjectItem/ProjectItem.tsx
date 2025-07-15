@@ -59,8 +59,8 @@ export const ProjectItem = ({
         <div className="project-header">
           <Typography type="heading-2">{title}</Typography>
           <IconLinkGroup>
-            <IconLink href={githubLink} icon={faGithub} />
-            <IconLink href={siteLink} icon={faLink} />
+            <IconLink href={githubLink} icon={faGithub} label="Github Repo" />
+            <IconLink href={siteLink} icon={faLink} label="Live Site" />
           </IconLinkGroup>
         </div>
         <div className="project-description">

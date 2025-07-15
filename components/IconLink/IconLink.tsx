@@ -11,6 +11,7 @@ type IconLinkProps = {
   href: string
   className?: string
   download?: string
+  label: string
 }
 
 export const IconLink = ({
@@ -18,6 +19,7 @@ export const IconLink = ({
   href,
   className,
   download,
+  label
 }: IconLinkProps) => {
   return (
     <Link
@@ -28,6 +30,7 @@ export const IconLink = ({
       rel="noopener noreferrer"
     >
       <FontAwesomeIcon icon={icon} className="icon-image" />
+      <span className="icon-text">Link</span>
     </Link>
   )
 }

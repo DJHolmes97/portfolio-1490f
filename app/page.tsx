@@ -39,15 +39,21 @@ export default function Home() {
             </Typography>
             <Navigation />
             <IconLinkGroup>
-              <IconLink icon={faGithub} href="https://github.com/DJHolmes97" />
+              <IconLink
+                icon={faGithub}
+                href="https://github.com/DJHolmes97"
+                label="Github Repo"
+              />
               <IconLink
                 icon={faLinkedin}
                 href="https://www.linkedin.com/in/djholmes97/"
+                label="LinkedIn Profile"
               />
               <IconLink
                 icon={faFile}
                 download="Daniel_Holmes_CV.pdf"
                 href="/Daniel_Holmes_CV.pdf"
+                label="Resume"
               />
             </IconLinkGroup>
           </LeftColumn>

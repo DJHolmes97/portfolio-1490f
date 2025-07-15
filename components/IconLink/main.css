@@ -8,3 +8,7 @@
 .icon-image {
   @apply size-full;
 }
+
+.icon-text {
+  @apply sr-only;
+}
