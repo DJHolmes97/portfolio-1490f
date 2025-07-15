@@ -15,7 +15,12 @@
 
   @apply group-hover/nav-link:nav-link-hover;
   @apply group-focus/nav-link:nav-link-hover;
+}
 
-  @apply group-active/nav-link:before:bg-link-secondary-hover;
-  @apply group-active/nav-link:before:w-5;
+.nav-link--active {
+  & .nav-link-text {
+    @apply text-link-secondary-hover;
+    @apply before:bg-link-secondary-hover;
+    @apply before:w-5;
+  }
 }

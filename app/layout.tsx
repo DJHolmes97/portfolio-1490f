@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`min-h-screen ${inter.variable}`}>
+    <html lang="en" className={`min-h-screen scroll-smooth ${inter.variable}`}>
       <body
         className={`flex antialiased bg-bg-primary justify-center ${inter.className}`}
       >

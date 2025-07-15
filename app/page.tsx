@@ -37,12 +37,7 @@ export default function Home() {
           <Typography type="body">
             Crafting Seamless Interfaces with Precision and Purpose.
           </Typography>
-          <Navigation>
-            <NavLink href="#about">ABOUT</NavLink>
-            <NavLink href="#experience">EXPERIENCE</NavLink>
-            <NavLink href="#education">EDUCATION</NavLink>
-            <NavLink href="#projects">PROJECTS</NavLink>
-          </Navigation>
+          <Navigation />
           <IconLinkGroup>
             <IconLink icon={faGithub} href="https://github.com/DJHolmes97" />
             <IconLink
@@ -63,7 +58,31 @@ export default function Home() {
           <ProjectSection limit={5} />
         </RightColumn>
       </main>
-      <footer className=""></footer>
+      <footer className="p-2">
+        <Typography type="caption" className="footer-text">
+          © {new Date().getFullYear()} Daniel Holmes. All rights reserved. Built
+          with Next.js, TypeScript, and Contentful. Heavily inspired by the
+          portfolio of{" "}
+          <a
+            href="https://www.brittanychiang.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-link-primary-hover"
+          >
+            Brittany Chiang
+          </a>
+          . Source code available on{" "}
+          <a
+            href="https://github.com/DJHolmes97"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-link-primary-hover"
+          >
+            GitHub
+          </a>
+          .
+        </Typography>
+      </footer>
     </div>
   )
 }

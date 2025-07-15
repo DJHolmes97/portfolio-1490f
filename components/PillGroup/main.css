@@ -5,5 +5,5 @@
 }
 
 .pill-group {
-  @apply flex gap-0.5 flex-wrap items-center;
+  @apply flex gap-0.5 flex-wrap items-center mt-0.5;
 }

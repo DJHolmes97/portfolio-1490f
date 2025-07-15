@@ -1,7 +1,7 @@
 @reference "../../styles/globals.css";
 
 .project-item {
-  @apply flex flex-row gap-2;
+  @apply flex flex-row gap-2 mb-3;
   @apply max-md:flex-col max-md:gap-1;
 }
 

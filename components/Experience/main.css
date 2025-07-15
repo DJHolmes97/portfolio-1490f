@@ -1,8 +1,12 @@
 @reference "../../styles/globals.css";
 
+.experience-item {
+  @apply mb-3;
+}
+
 .experience-link {
   transition: opacity 0.2s ease-in-out;
-  @apply flex flex-row hover:bg-bg-secondary-hover rounded-default gap-3;
+  @apply flex flex-row hover:bg-bg-secondary-hover rounded-default gap-3 py-1;
   @apply max-md:flex-col max-md:gap-0;
 }
 
