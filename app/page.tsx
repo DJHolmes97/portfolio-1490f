@@ -30,7 +30,7 @@ const RightColumn = ({ children }: ColumnProps) => {
 export default function Home() {
   return (
     <div className="h-full w-full">
-      <main className="flex h-full w-full flex-row gap-10 relative">
+      <main className="flex h-full w-full flex-row gap-10 relative max-md:flex-col max-md:gap-5">
         <LeftColumn>
           <Title />
           <Typography type="heading-2">Frontend Engineer</Typography>

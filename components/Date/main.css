@@ -1,7 +1,8 @@
 @reference "../../styles/globals.css";
 
 .date-container {
-  @apply flex flex-row items-center justify-between gap-0.5 w-fit p-0.5;
+  @apply flex flex-row items-center justify-between gap-0.5 w-fit px-0.5 py-1;
+  @apply max-md:py-0;
 }
 
 .date-text {

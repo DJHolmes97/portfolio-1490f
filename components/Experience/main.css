@@ -2,15 +2,16 @@
 
 .experience-link {
   transition: opacity 0.2s ease-in-out;
-  @apply flex flex-row hover:bg-bg-secondary-hover rounded-default;
+  @apply flex flex-row hover:bg-bg-secondary-hover rounded-default gap-3;
+  @apply max-md:flex-col max-md:gap-0;
 }
 
 .details-column {
-  @apply flex flex-col gap-1.5 p-0.5;
+  @apply flex flex-col gap-0.5;
 }
 
 .date-column {
-  @apply flex flex-col px-0.5 py-1 min-w-fit;
+  @apply flex flex-col min-w-fit;
 }
 
 body:has(.experience-link:hover) .experience-link:not(:hover) {

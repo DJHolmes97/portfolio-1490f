@@ -2,4 +2,5 @@
 
 .navigation {
   @apply flex flex-col p-1 mt-3;
+  @apply max-md:hidden;
 }

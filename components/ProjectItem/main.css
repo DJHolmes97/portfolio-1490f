@@ -2,14 +2,17 @@
 
 .project-item {
   @apply flex flex-row gap-2;
+  @apply max-md:flex-col max-md:gap-1;
 }
 
 .image-wrapper {
   @apply flex flex-shrink-0 items-baseline p-1;
+  @apply max-md:w-full max-md:items-center max-md:p-0;
 }
 
 .project-image {
   @apply w-15 object-cover p-1;
+  @apply max-md:w-full max-md:p-0;
 }
 
 .project-header {

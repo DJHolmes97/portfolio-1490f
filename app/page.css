@@ -2,8 +2,10 @@
 
 .left-column {
   @apply flex flex-col px-1 gap-1 py-10 max-w-50 w-full sticky top-0 h-screen;
+  @apply max-md:h-fit max-md:static max-md:pt-5 max-md:pb-2;
 }
 
 .right-column {
   @apply flex flex-col gap-10 px-1 py-10 w-full max-w-100;
+  @apply max-md:py-5;
 }

@@ -2,7 +2,6 @@
 
 :root {
   font-family: "Inter";
-
   --color-text-heading-1: #1effaa;
   --color-text-heading-2: #fefefe;
   --color-text-heading-3: #aaaaaa;
@@ -120,3 +119,5 @@ body {
   --opacity-dull: var(--opacity-dull); /* 0.8 */
   --opacity-visible: var(--opacity-visible); /* 1 */
 }
+
+@custom-variant max-md (@media (width <= 991.98px));
