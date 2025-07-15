@@ -8,11 +8,16 @@ type LinkProps = {
   children: React.ReactNode
   href: string
   className?: string
+  download?: string
 }
 
-export const Link = ({ children, href, className }: LinkProps) => {
+export const Link = ({ children, href, className, download }: LinkProps) => {
   return (
-    <NextLink href={href} className={`link group/link ${className}`}>
+    <NextLink
+      href={href}
+      className={`link group/link ${className}`}
+      download={download}
+    >
       {children}
       <span className="link-icon">
         <FontAwesomeIcon icon={faLink} />

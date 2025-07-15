@@ -79,7 +79,9 @@ export const EducationSection = async () => {
           />
         ))}
       </ul>
-      <Link href="/resume">View my full resume</Link>
+      <Link download="Daniel_Holmes_CV.pdf" href="/Daniel_Holmes_CV.pdf">
+        View my full resume
+      </Link>
     </section>
   )
 }

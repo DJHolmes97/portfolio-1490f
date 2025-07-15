@@ -5,13 +5,15 @@
 }
 
 .breadcrumb-text,
-.breadcrumb-chevron {
+.breadcrumb-icon {
   @apply text-link-primary-default;
-  @apply group-hover/breadcrumb:group-focus/breadcrumb:text-link-primary-hover;
+  @apply group-hover/breadcrumb:text-link-primary-hover;
+  @apply group-focus/breadcrumb:text-link-primary-hover;
   @apply group-active/breadcrumb:text-link-primary-hover;
 }
 
-.breadcrumb-chevron {
+.breadcrumb-icon {
   @apply size-1.5;
-  @apply group-hover/breadcrumb:group-focus/breadcrumb:size-2;
+  @apply group-hover/breadcrumb:size-2;
+  @apply group-focus/breadcrumb:size-2;
 }

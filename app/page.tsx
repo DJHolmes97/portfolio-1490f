@@ -49,14 +49,18 @@ export default function Home() {
               icon={faLinkedin}
               href="https://www.linkedin.com/in/djholmes97/"
             />
-            <IconLink icon={faFile} href="/link3" />
+            <IconLink
+              icon={faFile}
+              download="Daniel_Holmes_CV.pdf"
+              href="/Daniel_Holmes_CV.pdf"
+            />
           </IconLinkGroup>
         </LeftColumn>
         <RightColumn>
           <AboutSection />
           <ExperienceSection />
           <EducationSection />
-          <ProjectSection />
+          <ProjectSection limit={5} />
         </RightColumn>
       </main>
       <footer className=""></footer>

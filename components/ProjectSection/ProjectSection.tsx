@@ -45,8 +45,17 @@ async function getProjectSection(): Promise<ProjectSectionFields[] | null> {
   }
 }
 
-export const ProjectSection = async () => {
+export const ProjectSection = async ({
+  hideLink,
+  limit,
+}: {
+  hideLink?: boolean
+  limit?: number
+}) => {
   const projectEntry = await getProjectSection()
+  if (limit) {
+    projectEntry?.splice(limit)
+  }
 
   if (!projectEntry) {
     return (
@@ -77,7 +86,7 @@ export const ProjectSection = async () => {
           />
         ))}
       </ul>
-      <Link href="/resume">View all my projects</Link>
+      {!hideLink && <Link href="/projects">View all my projects</Link>}
     </section>
   )
 }
