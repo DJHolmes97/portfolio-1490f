@@ -20,7 +20,13 @@ export const IconLink = ({
   download,
 }: IconLinkProps) => {
   return (
-    <Link href={href} className={`icon-link ${className}`} download={download}>
+    <Link
+      href={href}
+      className={`icon-link ${className}`}
+      download={download}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FontAwesomeIcon icon={icon} className="icon-image" />
     </Link>
   )

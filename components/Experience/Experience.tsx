@@ -40,7 +40,12 @@ export const Experience = ({
 }: ExperienceProps) => {
   return (
     <li className="experience-item">
-      <a href={url} className="experience-link group/experience">
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="experience-link group/experience"
+      >
         <div className="date-column">
           <Date from={startDate} to={endDate} />
         </div>
