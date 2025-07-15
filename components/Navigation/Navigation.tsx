@@ -4,9 +4,7 @@ import "./main.css"
 import { NavLink } from "../NavLink/NavLink"
 import { useActiveSection } from "@/hooks/useActiveSelection"
 
-type NavigationProps = {}
-
-export const Navigation = ({}: NavigationProps) => {
+export const Navigation = () => {
   const sectionIds = ["about", "experience", "education", "projects"]
 
   const [activeId, setActiveId] = useActiveSection(sectionIds)

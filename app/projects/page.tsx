@@ -1,8 +1,5 @@
 import { Breadcrumb, ProjectSection, Typography } from "@/components"
 
-import { faFile } from "@fortawesome/free-solid-svg-icons"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-
 export default function Projects() {
   return (
     <div className="h-full w-full">

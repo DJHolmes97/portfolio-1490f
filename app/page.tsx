@@ -4,7 +4,6 @@ import {
   IconLinkGroup,
   Title,
   Typography,
-  NavLink,
   Navigation,
   AboutSection,
   ExperienceSection,
